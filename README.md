@@ -39,11 +39,6 @@ Please ensure your code follows our coding standards.
 
 This project is licensed under the [MIT License](https://opensource.org/license/mit).
 
-## Credits
-
-- Third-party library or resource credits go here.
-- Contributor names go here.
-
 ## Contact
 
 For questions or support, contact [ilia.dulkin@stud.th-deg.de](mailto:ilia.dulkin@stud.th-deg.de).
