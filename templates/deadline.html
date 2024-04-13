@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Schedule
+{% endblock title %}
+
+{% block body %}
+
+<div class="container mt-5">
+    <h1>Deadlines</h1>
+
+    {% for el in deadline %}
+    <div class="alert alert-info">
+        <h2>{{ el.subject }}</h2>
+        <p>{{ el.description }}</p>
+        <p><b> Date: {{ el.date }}  </b></p>
+        <a href="/deadline/{{ el.id }}" class="btn btn-warning">See more</a>
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock body %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Create schedule
+{% endblock title %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Create schedule</h1>
+
+    <form method="post">
+        <textarea name="name" id="name" placeholder="Course name" class="form-control"></textarea><br>
+        <textarea name="type" id="type" placeholder="Course type" class="form-control"></textarea><br>
+        <textarea name="place" id="place" placeholder="Room" class="form-control"></textarea><br>
+        <textarea name="teacher" id="teacher" placeholder="Teacher" class="form-control"></textarea><br>
+
+        <input type="date" name="date" id="date">
+
+        <input class="form-check-input" type="radio" id="every_week" name="how_often" value="1">
+        <label class="form-check-label" for="every_week">Every week</label><br>
+        <input class="form-check-input" type="radio" id="every_second_week" name="how_often" value="2">
+        <label class="form-check-label" for="every_second_week">Every second week</label><br>
+
+<!--        <textarea name="how_often" id="how_often" class="form-control"></textarea><br>-->
+        <input type="submit" class="btn btn-success" value="Create">
+    </form>
+
+</div>
+{% endblock body %}

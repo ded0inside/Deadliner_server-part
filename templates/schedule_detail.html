@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ schedule_detail.name }}
+{% endblock title %}
+
+{% block body %}
+
+<div class="container mt-5">
+    <h1>{{ schedule_detail.name }}</h1>
+
+    <div class="alert alert-info">
+        <h2>{{ schedule_detail.name }}</h2>
+        <p>{{ schedule_detail.type }}</p>
+        <p><b> Date: {{ schedule_detail.date }}  </b></p>
+        <a href="/schedule/{{ schedule_detail.id }}/delete" class="btn btn-danger">Delete</a>
+    </div>
+
+</div>
+{% endblock body %}

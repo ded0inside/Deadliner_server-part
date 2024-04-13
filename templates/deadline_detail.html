@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ deadline_detail.name }}
+{% endblock title %}
+
+{% block body %}
+
+<div class="container mt-5">
+    <h1>{{ deadline_detail.name }}</h1>
+
+    <div class="alert alert-info">
+        <h2>{{ deadline_detail.subject }}</h2>
+        <p>{{ deadline_detail.description }}</p>
+        <p><b> Date: {{ deadline_detail.date }}  </b></p>
+        <a href="/deadline/{{ deadline_detail.id }}/delete" class="btn btn-danger">Delete</a>
+    </div>
+
+</div>
+{% endblock body %}
